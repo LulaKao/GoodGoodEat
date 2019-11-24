@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">GoodGoodEat</string>
+    <string name="time">請選擇外送時段：</string>
+    <string name="select_food">請選擇餐點：</string>
+    <string name="NO1">一號餐</string>
+    <string name="NO2">二號餐</string>
+    <string name="NO3">三號餐</string>
+    <string name="NO4">四號餐</string>
+    <string name="NO5">五號餐</string>
+    <string name="NO6">六號餐</string>
+    <string name="add">加價購：</string>
+    <string name="chiese">起司+10元</string>
+    <string name="meat">豬排+40元</string>
+    <string name="noAdd">都不加</string>
+    <string name="submit">確認送出</string>
+    <string name="order">= 確認訂單 =</string>
+    <string name="orderAgain">重新選擇</string>
+    <string name="thanks">= 感謝您的訂購，期待再次為您服務 =</string>
+</resources>

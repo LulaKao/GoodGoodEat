@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         selectTime = findViewById(R.id.selectTime)
         submit_button = findViewById(R.id.submitButton1)
 
@@ -25,7 +26,9 @@ class MainActivity : AppCompatActivity() {
             this,
             R.array.deliveryTime,
             R.layout.support_simple_spinner_dropdown_item)
+
         selectTime.adapter = adapter
+
         selectTime.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
             override fun onNothingSelected(parent: AdapterView<*>?) {
             }
@@ -59,6 +62,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this@MainActivity, "已取消：${NO1.text}", Toast.LENGTH_LONG).show()
             }
         }
+
         NO2.setOnCheckedChangeListener { buttonView, isChecked ->
             if(isChecked){
                 Toast.makeText(this@MainActivity,"已選取：${NO2.text}",Toast.LENGTH_LONG).show()
@@ -67,6 +71,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this@MainActivity,"已取消：${NO2.text}",Toast.LENGTH_LONG).show()
             }
         }
+
         NO3.setOnCheckedChangeListener { buttonView, isChecked ->
             if(isChecked) {
                 Toast.makeText(this@MainActivity, "已選取：${NO3.text}", Toast.LENGTH_LONG).show()
@@ -75,6 +80,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this@MainActivity, "已取消：${NO3.text}", Toast.LENGTH_LONG).show()
             }
         }
+
         NO4.setOnCheckedChangeListener { buttonView, isChecked ->
             if(isChecked) {
                 Toast.makeText(this@MainActivity, "已選取：${NO4.text}", Toast.LENGTH_LONG).show()
@@ -83,6 +89,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this@MainActivity, "已取消：${NO4.text}", Toast.LENGTH_LONG).show()
             }
         }
+
         NO5.setOnCheckedChangeListener { buttonView, isChecked ->
             if(isChecked) {
                 Toast.makeText(this@MainActivity, "已選取：${NO5.text}", Toast.LENGTH_LONG).show()
@@ -91,6 +98,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this@MainActivity, "已取消：${NO5.text}", Toast.LENGTH_LONG).show()
             }
         }
+
         NO6.setOnCheckedChangeListener { buttonView, isChecked ->
             if(isChecked) {
                 Toast.makeText(this@MainActivity, "已選取：${NO6.text}", Toast.LENGTH_LONG).show()
@@ -128,4 +136,3 @@ class MainActivity : AppCompatActivity() {
         })
     }
 }
-

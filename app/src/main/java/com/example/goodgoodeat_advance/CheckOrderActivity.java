@@ -7,8 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.sql.Time;
-
 public class CheckOrderActivity extends AppCompatActivity {
 
     TextView txt_msg;
@@ -31,7 +29,6 @@ public class CheckOrderActivity extends AppCompatActivity {
         String Meal = get_bag.getString("Meal");
         String Add = get_bag.getString("Add");
         txt_msg.setText(Time +"\n"+Meal+"\n"+Add);
-
 
         //跳回MainActivity
         btn_previous.setOnClickListener(new View.OnClickListener() {
